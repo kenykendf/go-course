@@ -1,22 +1,24 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type Biodata struct {
-	nama      string
-	alamat    string
-	pekerjaan string
-	alasan    string
+	Nama      string
+	Alamat    string
+	Pekerjaan string
+	Alasan    string
 }
 
 func main() {
-	var individu = []Biodata{
-		{nama: "Corry", alamat: "Jakarta", pekerjaan: "IT Engineer", alasan: "masa depan"},
-		{nama: "Hamdan", alamat: "Jakarta", pekerjaan: "Back End Programmer", alasan: "masa depan"},
-		{nama: "Ken", alamat: "Jakarta", pekerjaan: "Program Analyst", alasan: "masa depan"},
-		{nama: "Prasetya", alamat: "Jakarta", pekerjaan: "Algorithm Supervisor", alasan: "masa depan"},
-		{nama: "Yoga", alamat: "Jakarta", pekerjaan: "Software Engineer", alasan: "masa depan"},
-		{nama: "Ajat", alamat: "Jakarta", pekerjaan: "Blockchain", alasan: "masa depan"},
+	individu := []Biodata{
+		{Nama: "Corry", Alamat: "Jakarta", Pekerjaan: "IT Engineer", Alasan: "masa depan"},
+		{Nama: "Hamdan", Alamat: "Jakarta", Pekerjaan: "Back End Programmer", Alasan: "masa depan"},
+		{Nama: "Ken", Alamat: "Jakarta", Pekerjaan: "Program Analyst", Alasan: "masa depan"},
+		{Nama: "Prasetya", Alamat: "Jakarta", Pekerjaan: "Algorithm Supervisor", Alasan: "masa depan"},
+		{Nama: "Yoga", Alamat: "Jakarta", Pekerjaan: "Software Engineer", Alasan: "masa depan"},
+		{Nama: "Ajat", Alamat: "Jakarta", Pekerjaan: "Blockchain", Alasan: "masa depan"},
 	}
 
 	fmt.Println(individu)
