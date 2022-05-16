@@ -23,7 +23,6 @@ func main() {
 	cek := panggilan(int(nilaitoint))
 
 	fmt.Println(cek)
-	// fmt.Println("absen", nilai)
 }
 
 func panggilan(urutan int) Biodata {
