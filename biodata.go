@@ -16,7 +16,7 @@ type Biodata struct {
 
 func main() {
 	nilai := os.Args[1]
-	nilaitoint, err := strconv.ParseInt(nilai, 6, 6)
+	nilaitoint, err := strconv.Atoi(nilai)
 	if err != nil {
 		fmt.Println("Absensi Tidak Sesuai")
 	}
@@ -34,6 +34,10 @@ func panggilan(urutan int) Biodata {
 		{Id: 4, Nama: "Prasetya", Alamat: "Jakarta", Pekerjaan: "Algorithm Supervisor", Alasan: "Ikut Yang Terbaik"},
 		{Id: 5, Nama: "Yoga", Alamat: "Jakarta", Pekerjaan: "Software Engineer", Alasan: "Trending"},
 		{Id: 6, Nama: "Ajat", Alamat: "Jakarta", Pekerjaan: "Blockchain", Alasan: "Kesempatan Terbaik"},
+	}
+
+	if len(individu) < urutan {
+		return individu[0]
 	}
 
 	return individu[urutan]
